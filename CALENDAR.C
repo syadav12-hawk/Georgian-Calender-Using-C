@@ -11,9 +11,16 @@ int month[]={31,28,31,30,31,30,31,31,30,31,30,31};
 clrscr();
 printf("Enter the year and month\n");
 scanf("%d %d",&y,&m);
-ny=y-1900;
-ly=ny/4;
-if(y%4==0)
+ny=y-1900;//ny is difference between starting year of GC and the enterted y
+ly=ny/4;//Calculating if the y is leap year.
+    if (y % 4 == 0) {
+        if (y % 100 == 0) {
+            // the year is a leap year if it is divisible by 400.
+            if (y % 400 == 0)
+                ly=ly-1;
+        } else
+            ly=ly-1;
+    } 
 ly=ly-1;
 dod=ly*2+(ny-ly);
 printf("The first day of the year %d is ",y);
