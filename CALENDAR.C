@@ -27,8 +27,8 @@ for (i=1291;i<y;i++)
     total_num_of_days_from_1291=total_num_of_days_from_1291+365;
 }
 ly=total_ly_from_1291;
-printf("Number of Leap Years since %d ,excluding %d : %d\n",y,y,ly);
-printf("Number of Days since %d : %d\n",y,total_num_of_days_from_1291);
+printf("Number of Leap Years since 1291 ,excluding %d : %d\n",y,ly);
+printf("Number of Days since 1291 : %d\n",total_num_of_days_from_1291);
 //if(l_yr_check==1)
 //ly=ly-1;
 
